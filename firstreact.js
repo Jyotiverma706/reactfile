@@ -39,7 +39,7 @@ function App() {
   }
 ]
     const list=fur.map(abc=> 
-    <div>
+    <div><hr></hr>
     <img src={abc.image} alt="" height="300px" width="500px"></img><br></br>
     <h4>Name:{abc.name}</h4>
     <h5>Price:{abc.price}</h5></div>)
@@ -47,7 +47,7 @@ function App() {
     console.log(list)
     return (
    <div>
-     <h1>Furniture Shop</h1><hr></hr>
+     <h1>Furniture Shop</h1>
      {list}
      
    </div>
