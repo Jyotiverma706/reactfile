@@ -1,39 +1,55 @@
-
+import React from 'react'
 import './App.css';
 
 function App() {
-  const fur = [
-    {
-      "name": "Furniture Cafe Wooden Intersecting Wall Mounted Shelf"
-    },
-    { "price": 2000 },
-    {'src':'https://www.amazon.in/Furniture-Wooden-Intersecting-Shelves-Living/dp/B07F5T7B71/ref=sr_1_5?crid=14LANL9YD4DNK&dchild=1&keywords=furnitures+for+home&qid=1618149451&sprefix=furniture%2Caps%2C806&sr=8-5'},
-    {
-      "name": "Scuzo Microfiber Chair Pad Cushion, 48 x 16 Inches, Blue , Pack of 1designing sofa"
-    },
-    { "price": 2000 },
-    {'src':'https://www.amazon.in/Exclusive-Relaxing-Cushion-Rocking-Outdoor/dp/B08G88CZQJ/ref=sr_1_20?crid=14LANL9YD4DNK&dchild=1&keywords=furnitures+for+home&qid=1618149451&sprefix=furniture%2Caps%2C806&sr=8-20'},
-      {
-      "name": "designing sofa"
-    },
-    { "price": 2000 },
-    {'src':'https://www.amazon.in/Furniture-Wooden-Intersecting-Shelves-Living/dp/B07F5T7B71/ref=sr_1_5?crid=14LANL9YD4DNK&dchild=1&keywords=furnitures+for+home&qid=1618149451&sprefix=furniture%2Caps%2C806&sr=8-5'},
-        {
-      "name": "designing sofa"
-    },
-    { "price": 2000 },
-    {'src':'https://www.amazon.in/Furniture-Wooden-Intersecting-Shelves-Living/dp/B07F5T7B71/ref=sr_1_5?crid=14LANL9YD4DNK&dchild=1&keywords=furnitures+for+home&qid=1618149451&sprefix=furniture%2Caps%2C806&sr=8-5'},
-          {
-      "name": "designing sofa"
-    },
-    { "price": 2000 }
-    {'src':'https://www.amazon.in/Furniture-Wooden-Intersecting-Shelves-Living/dp/B07F5T7B71/ref=sr_1_5?crid=14LANL9YD4DNK&dchild=1&keywords=furnitures+for+home&qid=1618149451&sprefix=furniture%2Caps%2C806&sr=8-5'},]
-    const list=fur.map(abc=><div>{abc.src}<h4>{abc.name}{abc.price}</h4></div>)
+  const fur = [{
+    "name":"Morwal's Decor Ansyie Wing Chair",
+    "price":5499,
+    "image":"https://images-na.ssl-images-amazon.com/images/I/61u6mL8zdNS._SL1000_.jpg"
+  },
+  {
+    "name":"Novelty Compact Plastic Cupboard with Shelf",
+    "price":2565,
+    "image":"https://images-na.ssl-images-amazon.com/images/I/71oGJxicl5L._SL1500_.jpg"
+  },
+  {
+    "name":"White House Furniture Center Table",
+    "price":9000,
+    "image":"https://images-na.ssl-images-amazon.com/images/I/3166WhvHxmL.jpg"
+  },
+  {
+    "name":"Dime Store Interlock Wall Mount Wall Shelf Three Shelves for Living Room ",
+    "price":695,
+    "image":"https://images-na.ssl-images-amazon.com/images/I/51sNdFeLQYL._SL1000_.jpg"
+  },
+  {
+    "name":"Dime Store Wooden Book Shelf for Study Room Living Room Bedroom Home Library Kids Books Shelf Stand",
+    "price":945,
+    "image":"https://images-na.ssl-images-amazon.com/images/I/61QJu2uF1uL._SL1500_.jpg"
+  },
+  {
+    "name":"Solimo Vega Engineered Wood Espresso Finish Hydraulic Half Lift-on Queen Bed (Brown)",
+    "price":19000,
+    "image":"https://images-na.ssl-images-amazon.com/images/I/81-fISsuL0L._SL1500_.jpg"
+  },
+  {
+    "name":"Solimo Cyrus Glossy Metal King Bed (Black)",
+    "price":8000,
+    "image":"https://images-na.ssl-images-amazon.com/images/I/81xx2cUwLdL._SL1500_.jpg"
+  }
+]
+    const list=fur.map(abc=> 
+    <div>
+    <img src={abc.image} alt="" height="300px" width="500px"></img><br></br>
+    <h4>Name:{abc.name}</h4>
+    <h5>Price:{abc.price}</h5></div>)
+
     console.log(list)
-  return (
+    return (
    <div>
-     <h1>Furniture Shop</h1>
+     <h1>Furniture Shop</h1><hr></hr>
      {list}
+     
    </div>
   );
   
