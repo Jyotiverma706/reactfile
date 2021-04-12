@@ -35,11 +35,11 @@ function setMobile() {
       <div>
         <label>
          Enter Name:<br></br>
-            <input type="text" name="name"></input><br></br>
+            <input onChange={setName} type="text" name="name"></input><br></br>
          Address:<br></br>
-            <input type="text"></input><br></br>
+            <input onChange={setMobile} type="text"></input><br></br>
          Mobile No.:<br></br>
-            <input typer="Number"></input><br></br>
+            <input onChange={setAddress} typer="Number"></input><br></br>
         <button><Link to="/confirmation">Submit</Link></button>
        
        <switch>
