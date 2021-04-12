@@ -8,26 +8,33 @@ import {
 } from "react-router-dom";
 
 function App() {
-const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
+const [details, setDetails]= useState({"name":"","address":"","Mobile":""});
+
 function setName(event)
-const entry=details
+{
+const entry = details
 entry.name=event.target.value
 setDetails(entry)
 }
   function setMobile(event)
+  {
   const entry=details
   entry.Mobile=event.target.value
   setDetails(entry)
   }
   function setAddress(event)
+  {
     const entry=details
     entry.address=event.target.value
     setDetails(entry)
     }
+    function test(){
   console.log(details)
+    }
      return (
        <router>
       <div>
+        <h1>Entry Details</h1>
         <label>
          Enter Name:<br></br>
             <input onChange={setName} type="text" name="name"></input><br></br>
