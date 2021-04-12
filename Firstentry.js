@@ -16,12 +16,12 @@ setDetails(Entry)
 }
   function setMobile(event)
   const Entry=details
-  Entry.name=event.target.value
+  Entry.Mobile=event.target.value
   setDetails(Entry)
   }
   function setAddress(event)
     const Entry=details
-    Entry.name=event.target.value
+    Entry.address=event.target.value
     setDetails(Entry)
     }
   console.log(details)
