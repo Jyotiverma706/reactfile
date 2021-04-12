@@ -1,13 +1,13 @@
-  
-import React from 'React';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import React, {useState} from 'React';
-import confirmation from './confirmation';
+import React,{ useState } from "react";
+import confirmation from "./confirmation";
+
 
 function App() {
 const [details, setDetails]= useState({"name":"","address":"","Mobile":""});
@@ -46,7 +46,7 @@ setDetails(entry)
             <input onChange={setAddress} typer="Number"></input><br></br>
         <button onClick={test}><Link to="/confirmation">Submit</Link></button>
         <Switch>
-       <Route path="/confirmation"><confirmation details={details}></confirmation></Route>
+      <Route path="/confirmation"><confirmation details={details}></confirmation></Route>
        </Switch>
        </label>
   </div>
