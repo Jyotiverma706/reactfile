@@ -10,19 +10,19 @@ import {
 function App() {
 const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
 function setName(event)
-const Entry=details
-Entry.name=event.target.value
-setDetails(Entry)
+const entry=details
+entry.name=event.target.value
+setDetails(entry)
 }
   function setMobile(event)
-  const Entry=details
-  Entry.Mobile=event.target.value
-  setDetails(Entry)
+  const entry=details
+  entry.Mobile=event.target.value
+  setDetails(entry)
   }
   function setAddress(event)
-    const Entry=details
-    Entry.address=event.target.value
-    setDetails(Entry)
+    const entry=details
+    entry.address=event.target.value
+    setDetails(entry)
     }
   console.log(details)
      return (
