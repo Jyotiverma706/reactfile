@@ -1,14 +1,38 @@
-import React from 'react'
-import './App.css';
-
+import React from 'react';
+import react,{useState} from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 function App() {
-  const form=[{"name":"","address":"","Mobile":""}]
-  const Entry=form.map(abc=><div>{abc.name}{abc.Mobile}{abc.address}</div>)
+const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
+function setName(event)
+const Entry=details
+Entry.name=event.target.value
+setDetails(Entry)
+}
+function setMobile() {
+  const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
+  function setMobile(event)
+  const Entry=details
+  Entry.name=event.target.value
+  setDetails(Entry)
+  }
+  function setAddress() {
+    const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
+    function setAddress(event)
+    const Entry=details
+    Entry.name=event.target.value
+    setDetails(Entry)
+    }
   console.log(Entry)
      return (
-      <form>
+       <router>
+      <div>
         <label>
          Enter Name:<br></br>
             <input type="text" name="name"></input><br></br>
@@ -16,9 +40,13 @@ function App() {
             <input type="text"></input><br></br>
          Mobile No.:<br></br>
             <input typer="Number"></input><br></br>
-         <button>Submit</button>
+        <button><Link to="/confirmation">Submit</Link></button>
+       
+       <switch>
+       <Route path="./confirmation">confirmation</Route>
+       </switch>
        </label>
-  </form>
-      )
+  </div>
+  </router>      )
 };
 export default App;
