@@ -7,7 +7,6 @@ import {
   Link
 } from "react-router-dom";
 
-
 function App() {
 const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
 function setName(event)
@@ -15,21 +14,17 @@ const Entry=details
 Entry.name=event.target.value
 setDetails(Entry)
 }
-function setMobile() {
-  const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
   function setMobile(event)
   const Entry=details
   Entry.name=event.target.value
   setDetails(Entry)
   }
-  function setAddress() {
-    const [details, setDetails]= useState({"name":"","address":"","Mobile":""})
-    function setAddress(event)
+  function setAddress(event)
     const Entry=details
     Entry.name=event.target.value
     setDetails(Entry)
     }
-  console.log(Entry)
+  console.log(details)
      return (
        <router>
       <div>
