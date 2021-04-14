@@ -1,8 +1,11 @@
-import React from 'React';
 
-function confirmation() {
-  return (
-    <h3>Confirmation Details</h3> );
-}
-
-export default confirmation;
+function Confirmation() {
+    return (
+        <div>
+            <h1 className="header">Confirmation Page</h1>
+            <p>Your Information Is Submitted</p>
+       </div>
+  
+    );
+  }
+    export default Confirmation;
