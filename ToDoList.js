@@ -1,5 +1,6 @@
 
 import React,{useState} from 'react';
+import todo from './todo';
 import './App.css';
 const App =() => {
   const[inputList, setInputList]=useState("");
@@ -31,7 +32,8 @@ const App =() => {
         <ol>
           <li></li>
           {item.map((itemVal) =>{
-            return <li>{itemVal}</li>;
+            return (
+           <todo text ={itemVal}></todo>);
           })}
         </ol>
       </div>
