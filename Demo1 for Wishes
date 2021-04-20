@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
 let currDate= new Date();
 currDate = currDate.getHours();
@@ -20,6 +21,8 @@ if(currDate >= 1 && currDate < 12)
   cssStyle.color = "Black";
 }
 ReactDOM.render(
-<h1>Hello Sir, <span style = {cssStyle}> {greeting}</span></h1>,
-  document.getElementById('root')
+  <div>
+      <h1>Hello Sir, <span style = {cssStyle}> {greeting}</span></h1>,
+       document.getElementById('root')
+  </div>
 );
